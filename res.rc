@@ -1,0 +1,16 @@
+#include "resource.h"
+#include "winres.h"
+
+IDD_DIALOG1 DIALOGEX 0, 0, 150, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "7TV Clock Screensaver Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save",IDOK,100,30,43,12,WS_GROUP
+    LTEXT           "github.com/n0cha3/7TV.scr",IDC_STATIC,1,40,92,8
+    CONTROL         "Enable sound",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,10,55,8
+END
+
+IDC_WAVE WAVE "audio.wav"
+
+IDI_ICON ICON "icon.ico"
